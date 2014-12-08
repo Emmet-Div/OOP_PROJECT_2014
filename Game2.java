@@ -9,7 +9,7 @@ public class Game2 {
 	}
 
 	public void play(){	
-		Player P1 = new Player("player.dat");	
+		Player P1 = new Player();	
 		Cards2 deck= new Cards2();
 	 int pcard1=deck.deal();
 	 int vpcard1 = deck.value(pcard1);
@@ -43,6 +43,7 @@ public class Game2 {
 	if(ptotal==21){
 		JOptionPane.showMessageDialog(null,"BlackJack you win");
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 	}
 	if(ptotal>21){
@@ -55,6 +56,13 @@ public class Game2 {
 		JOptionPane.showMessageDialog(null,"You busted");
 		//P1.lossG("player.dat");
 >>>>>>> parent of 0115fcf... Work Damn it
+=======
+		P1.wonG();
+	}
+	if(ptotal>21){
+		JOptionPane.showMessageDialog(null,"You busted");
+		P1.lossG();
+>>>>>>> parent of 33df8d2... damn
 		System.exit(0);
 		}
 	}
@@ -73,6 +81,7 @@ public class Game2 {
 	if(dtotal == 21){
 		JOptionPane.showMessageDialog(null,"Dealer wins");
 <<<<<<< HEAD
+<<<<<<< HEAD
 			
 		}
 	if(dtotal >21){
@@ -85,6 +94,13 @@ public class Game2 {
 		JOptionPane.showMessageDialog(null,"Dealer Bust");
 		//P1.wonG("player.dat");
 >>>>>>> parent of 0115fcf... Work Damn it
+=======
+			P1.lossG();
+		}
+	if(dtotal >21){
+		JOptionPane.showMessageDialog(null,"Dealer Bust");
+		P1.wonG();
+>>>>>>> parent of 33df8d2... damn
 		}
 	}	
 /*		
