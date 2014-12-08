@@ -9,7 +9,7 @@ public class Game2 {
 	}
 
 	public void play(){	
-		Player P1 = new Player();	
+		Player P1 = new Player("player.dat");	
 		Cards2 deck= new Cards2();
 	 int pcard1=deck.deal();
 	 int vpcard1 = deck.value(pcard1);
@@ -42,11 +42,11 @@ public class Game2 {
 			
 	if(ptotal==21){
 		JOptionPane.showMessageDialog(null,"BlackJack you win");
-		P1.wonG();
+	//	P1.toString(wonG("player.dat"));
 	}
 	if(ptotal>21){
 		JOptionPane.showMessageDialog(null,"You busted");
-		P1.lossG();
+		//P1.lossG("player.dat");
 		System.exit(0);
 		}
 	}
@@ -64,11 +64,11 @@ public class Game2 {
 	
 	if(dtotal == 21){
 		JOptionPane.showMessageDialog(null,"Dealer wins");
-			P1.lossG();
+			//P1.lossG("player.dat");
 		}
 	if(dtotal >21){
 		JOptionPane.showMessageDialog(null,"Dealer Bust");
-		P1.wonG();
+		//P1.wonG("player.dat");
 		}
 	}	
 /*		
