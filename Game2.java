@@ -41,30 +41,13 @@ public class Game2 {
 			JOptionPane.showMessageDialog(null,"Your total now is " + ptotal);}
 			
 	if(ptotal==21){
-		JOptionPane.showMessageDialog(null,"BlackJack you win");
-<<<<<<< HEAD
-<<<<<<< HEAD
-		
+		JOptionPane.showMessageDialog(null,"BlackJack you win");		
+		//P1.wonG();
 	}
-	if(ptotal>21){
+		if(ptotal>21){
 		JOptionPane.showMessageDialog(null,"You busted");
-		
-=======
-	//	P1.toString(wonG("player.dat"));
 	}
-	if(ptotal>21){
-		JOptionPane.showMessageDialog(null,"You busted");
-		//P1.lossG("player.dat");
->>>>>>> parent of 0115fcf... Work Damn it
-=======
-		P1.wonG();
-	}
-	if(ptotal>21){
-		JOptionPane.showMessageDialog(null,"You busted");
-		P1.lossG();
->>>>>>> parent of 33df8d2... damn
-		System.exit(0);
-		}
+
 	}
 	JOptionPane.showMessageDialog(null,"dealers GO");
 	JOptionPane.showMessageDialog(null,deck.toString(dcard1));
@@ -80,27 +63,9 @@ public class Game2 {
 	
 	if(dtotal == 21){
 		JOptionPane.showMessageDialog(null,"Dealer wins");
-<<<<<<< HEAD
-<<<<<<< HEAD
-			
 		}
 	if(dtotal >21){
 		JOptionPane.showMessageDialog(null,"Dealer Bust");
-		
-=======
-			//P1.lossG("player.dat");
-		}
-	if(dtotal >21){
-		JOptionPane.showMessageDialog(null,"Dealer Bust");
-		//P1.wonG("player.dat");
->>>>>>> parent of 0115fcf... Work Damn it
-=======
-			P1.lossG();
-		}
-	if(dtotal >21){
-		JOptionPane.showMessageDialog(null,"Dealer Bust");
-		P1.wonG();
->>>>>>> parent of 33df8d2... damn
 		}
 	}	
 /*		

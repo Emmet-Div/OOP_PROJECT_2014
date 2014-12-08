@@ -5,14 +5,12 @@ import javax.swing.*;
  
 public class Player implements Serializable {//saves the file
 	//attributes
-	private int win=0;
-	 private int loss=0; 
+	private int wins=0;
+	 private int losses=0; 
+	 private int win;
+	 private int loss;
 	private String name;
 	
-	public Player(String name){
-		this.name=name;
-	}
-
 	public void setName(String name){
 		this.name=name;
 	}
@@ -36,7 +34,7 @@ public class Player implements Serializable {//saves the file
 
 	public void wonG(int wins) {
 		wins++;
-		win+=wins;
+		wins+=win;
 	}
 	
 	public void lossG(int losses) {
@@ -45,6 +43,6 @@ public class Player implements Serializable {//saves the file
 	}
 
 	public String toString(){
-		return name + "\n " + win + " " + loss ;
+		return name + "\n " + win + " " + loss + "\n" ;
 	}
 }//end of class
