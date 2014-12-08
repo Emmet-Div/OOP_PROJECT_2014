@@ -42,11 +42,19 @@ public class Game2 {
 			
 	if(ptotal==21){
 		JOptionPane.showMessageDialog(null,"BlackJack you win");
+<<<<<<< HEAD
 		
 	}
 	if(ptotal>21){
 		JOptionPane.showMessageDialog(null,"You busted");
 		
+=======
+	//	P1.toString(wonG("player.dat"));
+	}
+	if(ptotal>21){
+		JOptionPane.showMessageDialog(null,"You busted");
+		//P1.lossG("player.dat");
+>>>>>>> parent of 0115fcf... Work Damn it
 		System.exit(0);
 		}
 	}
@@ -64,11 +72,19 @@ public class Game2 {
 	
 	if(dtotal == 21){
 		JOptionPane.showMessageDialog(null,"Dealer wins");
+<<<<<<< HEAD
 			
 		}
 	if(dtotal >21){
 		JOptionPane.showMessageDialog(null,"Dealer Bust");
 		
+=======
+			//P1.lossG("player.dat");
+		}
+	if(dtotal >21){
+		JOptionPane.showMessageDialog(null,"Dealer Bust");
+		//P1.wonG("player.dat");
+>>>>>>> parent of 0115fcf... Work Damn it
 		}
 	}	
 /*		
