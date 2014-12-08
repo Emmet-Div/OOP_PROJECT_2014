@@ -23,6 +23,8 @@ public MyMenu() {
 	setLocation(300,250);
 	getContentPane().setBackground(Color.orange);
 	setDefaultCloseOperation(EXIT_ON_CLOSE);
+	push=new JButton("Push Me");
+	cPane.add(push);
 	createFileMenu();
 	createPlayerMenu();
 	
@@ -77,7 +79,7 @@ public void saveF() throws IOException{
  	}
  }
  public void add(){
- 	Player plays = new Player("player.dat");
+ 	Player plays = new Player();
  	plays.setName(JOptionPane.showInputDialog("Add your Name"));
  	player.add(plays); 	 
  }
